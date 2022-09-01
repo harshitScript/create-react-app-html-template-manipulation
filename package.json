@@ -34,5 +34,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [
+    "manipulating-html",
+    "html-injection",
+    "index.html",
+    "scalability"
+  ],
+  "author": "Harshit Bhawsar",
+  "license": "ISC"
 }
