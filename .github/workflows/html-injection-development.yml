@@ -1,0 +1,24 @@
+# This is a basic workflow to help you get started with Actions
+
+name: DEVELOPMENT WORKFLOW
+
+on:
+  push:
+    branches: 
+      - development
+
+jobs:
+  notify_merge:
+    name: Notify Development Merge
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code checkout tom github workflows
+      - uses: actions/checkout@v3
+      
+      - name: Notifiction
+      - run: |
+          echo Development Merge started.
+          echo Development Merge ended.
+      
+      
+      
