@@ -1,0 +1,15 @@
+# THIS WORKFLOW WILL RUNS ON EACH SUCCESSFUL MERGE TO THE DEVELOPMENT BRANCH.
+
+name: DEVELOPMENT WORKFLOW
+
+on:
+  push:
+    branches: ["development"]
+
+Jobs:
+  job_1:
+    name: DEVELOPMENT CODE MERGE
+    runs_on: ubuntu-latest
+    steps:
+      -name: Merge confirmation.
+      -run: echo Development Merge Occurred.
