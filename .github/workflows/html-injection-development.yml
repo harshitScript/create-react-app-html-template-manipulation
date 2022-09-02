@@ -11,5 +11,10 @@ Jobs:
     name: DEVELOPMENT CODE MERGE
     runs_on: ubuntu-latest
     steps:
+      -name: Checking out code to github workflows
+      -uses: actions/checkout@v3
+
       -name: Merge confirmation.
-      -run: echo Development Merge Occurred.
+      -run: |
+        echo Development Merge Started.
+        echo Development Merge Ended.
