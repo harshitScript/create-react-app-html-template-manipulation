@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import { Test } from "./Test";
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <h1>{process.env.REACT_APP_BROKER_NAME}</h1>
       <p>Checkout the index.html file to see how html injection works.</p>
     </Outer>
+    <Test />
   );
 }
 
