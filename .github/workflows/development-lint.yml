@@ -1,0 +1,23 @@
+name: Lint Development Codebase
+
+on:
+  push:
+    branches: [development]
+
+  workflow_dispatch:
+
+jobs:
+  linting:
+    runs_on: ubuntu-latest
+    steps:
+      - name: checkout to codebase
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Linting Super linter
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_JAVASCRIPT_ES: true
+          VALIDATE_REACT: true
