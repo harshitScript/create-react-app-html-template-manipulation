@@ -8,7 +8,7 @@ on:
 
 jobs:
   linting:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: checkout to codebase
         uses: actions/checkout@v3
